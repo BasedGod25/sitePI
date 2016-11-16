@@ -1,11 +1,19 @@
 <html>
    <head>
       <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="import" href="about.html">
+        <script src="jquery-3.1.1.min.js"></script> 
+   		 <script> 
+   			$(function(){
+     	 	$("#includedContent").load("about.html"); 
+  			});
+    	</script> 
    </head>
    <body>
+   	<div id="includedContent"></div>
         <H1>HELLO WORLD, HEH!!</H1>
 		<div id="menu">
-			<div id ="menuitem"> eto menu item </div>
+			<div id ="menuitem"> <a href="about.html">eto menu item</a> </div>
 		</div>
    </body>
 </html>
